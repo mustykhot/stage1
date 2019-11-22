@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    background: grey;
+    flex-wrap: wrap;
+}
+   
+.box_one{
+    height: 550px;
+    
+    background: #C3B2B2;
+    flex: 1 0 300px;
+    
+}
+.box_two{
+    height: 550px;
+    min-width: 300px;
+    background:greenyellow;
+    flex: 1 0 300px;
+}
+.son-box{
+    margin-top: 20px;
+    margin-left: 70px;
+    background: #d8d8d8;
+    width: 250px;
+    height: 170px;
+    flex: 1; 
+}
+::placeholder{
+   text-align: center;
+}
+input[type="text"]{
+    margin-top: 50px;
+    margin-left: 70px;
+    height: 27px;
+    width: 200px;
+    flex: 1;
+    
+}
