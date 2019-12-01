@@ -4,28 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 27 - Complex Data - JavaScript Explained</title>
+    <title>Exercise 27 - The Browser API - JavaScript Explained</title>
   </head>
   <body>
-    <h1>Complex Data Exercises</h1>
+    <h1>The Browser API Exercises</h1>
     <p>Open the web inspector console to test.</p>
+    <div class="video-player">
+      <video controls>
+        <source
+          src="https://dzwonsemrish7.cloudfront.net/items/3C350y3F3e47332u1x1T/demo-video.mp4"
+          type="video/mp4"
+        />
+        Sorry, your browser doesn't support embedded videos :(
+      </video>
+      <p>
+        <input id="play" type="submit" value="Play" />
+        <input id="pause" type="submit" value="Pause" />
+      </p>
+    </div>
   </body>
   <script>
-    const dataset = [
-      { id: 1820, value: 491800 },
-      { id: 4310, value: 430110 },
-      { id: 3980, value: 657010 },
-      { id: 5573, value: 801430 },
-      { id: 2010, value: 313001 }
-    ];
-    const values = dataset.map(data => data.value);
-    const min = Math.min(...values);
-    const max = Math.max(...values);
-    const sum = values.reduce((a, b) => (b += a));
-    const average = sum / values.length;
-    const total = sum.toFixed(2);
-    console.log(min, max, average, total);
-    
-    // Place your code below this line, before the closing script tag
+    const video= document.querySelector(`video`)
+    const play= document.querySelector(`#play`)
+    const pause= document.querySelector(`#pause`)
+
+    function playVideo(e){
+      video.play()
+
+    }
+    function pauseVideo(e){
+      video.pause()
+    }
+    playButton.addEventListener(`click`, playVideo);
+    pauseButton.addEventListener(`click`, pauseVideo);
+    // Place your code below this line
   </script>
 </html>

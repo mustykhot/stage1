@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 14 - Complex Data - JavaScript Explained</title>
+    <title>Exercise 14 - The Browser API - JavaScript Explained</title>
   </head>
   <body>
-    <h1>Complex Data Exercises</h1>
-    <p>Open the web inspector console to test.</p>
+    <div id="app">
+      <h1>The Browser API Exercises</h1>
+      <p>Open the web inspector console to test.</p>
+    </div>
   </body>
   <script>
-     const postIds = [1, 13, 44, 17, 22, 19, 11];
-     console.log(postIds);
-    // Place your code below this line, before the closing script tag
+    const staticHeader = () => `<h2>Static Header</h2>`;
+    const container = document.querySelector(`#app`);
+    container.insertAdjacentHTML(`beforeend`, staticHeader());
+    // Place your code below this line
   </script>
 </html>

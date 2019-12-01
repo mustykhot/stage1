@@ -4,34 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 17 - Complex Data - JavaScript Explained</title>
+    <title>Exercise 17 - The Browser API - JavaScript Explained</title>
   </head>
   <body>
-    <h1>Complex Data Exercises</h1>
-    <p>Open the web inspector console to test.</p>
+    <div id="app">
+      <h1>The Browser API Exercises</h1>
+      <p>Open the web inspector console to test.</p>
+    </div>
   </body>
   <script>
-     const posts = [
-      {
-        id: 1,
-        title: `First Post`,
-        slug: `first-post`,
-        excerpt: `Let's get this started!`
-      },
-      {
-        id: 2,
-        title: `Second Post`,
-        slug: `second-post`,
-        excerpt: `On a roll..`
-      },
-      {
-        id: 1,
-        title: `Third Post`,
-        slug: `third-post`,
-        excerpt: `Keeping it going.`
-      }
-    ];
-    console.log(posts);
-    // Place your code below this line, before the closing script tag
+    const menuLink = (text, link) => `<li><a href="${link}">${text}</a></li>`;
+    console.log(menuLink(`Home`, `/#home`));
+    // Place your code below this line
   </script>
 </html>

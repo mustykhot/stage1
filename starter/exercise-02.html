@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 2 - Complex Data - JavaScript Explained</title>
+    <title>Exercise 2 - The Browser API - JavaScript Explained</title>
   </head>
   <body>
-    <h1>Complex Data Exercises</h1>
-    <p>Open the web inspector console to test.</p>
+    <div id="container">
+      <h1><a href="#">The Browser API Exercises</a></h1>
+      <p>Open the web inspector console to test.</p>
+    </div>
   </body>
   <script>
-    // Place your code below this line, before the closing script tag
-    const user={
-      id:1,
-      username:'yourusername',
-      isloggedin: true,
-    };
-    console.log(user);
+    const container = document.querySelector(`#container`);
+    const firstheader = document.querySelector(`h1`);
+    console.log(firstheader)
+    // Place your code below this line
   </script>
 </html>
